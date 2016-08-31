@@ -1,0 +1,160 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context="com.ist_android.project.Main2Activity"
+
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+             >
+
+            <ImageView
+                android:layout_width="500px"
+                android:layout_height="300px"
+                android:layout_gravity="center"
+                android:id="@+id/imageIV"
+                android:background="@android:drawable/alert_dark_frame"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/edit_text_shape"
+            android:layout_marginTop="15dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+
+            android:weightSum="1" >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/download"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:layout_marginLeft="30dp"
+                android:text="Take Prescription"
+                android:textStyle="bold"
+                android:onClick="take_prescriptionTV"
+                android:textSize="20sp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_shape"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".05"
+                android:text="Doctor name:"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:hint="Name of the doctor"
+                android:layout_weight="0.75"
+                android:id="@+id/doctor_nameET"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_shape"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:text="Specialized  :"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:hint="Expert on ?"
+                android:layout_weight=".75"
+                android:id="@+id/specializedET"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_shape"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:text="Date:"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="Take Date"
+                android:layout_weight=".75"
+                android:id="@+id/dateET"/>
+        </LinearLayout>
+
+        <Button
+            android:onClick="submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+
+            android:background="@android:color/darker_gray"
+            android:textStyle="bold"/>
+        </LinearLayout>
+
+</ScrollView>
+
